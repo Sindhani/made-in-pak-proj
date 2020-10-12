@@ -1,49 +1,28 @@
 @extends('layout.app')
 @section('contents')
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="">
+                <div id="gradient-line-chart1" class="height-250 GradientlineShadow1"></div>
+            </div>
+        </div>
+    </div>
             <!-- eCommerce statistic -->
             <div class="row">
-                <div class="col-xl-4 col-lg-6 col-md-12">
-                    <div class="card pull-up ecom-card-1 bg-white">
-                        <div class="card-content ecom-card2 height-180">
-                            <h5 class="text-muted danger position-absolute p-1">Progress Stats</h5>
-                            <div>
-                                <i class="ft-pie-chart danger font-large-1 float-right p-1"></i>
-                            </div>
-                            <div class="progress-stats-container ct-golden-section height-75 position-relative pt-3  ">
-                                <div id="progress-stats-bar-chart"></div>
-                                <div id="progress-stats-line-chart" class="progress-stats-shadow"></div>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="col-lg-3">
+                    <x-card title="Total Views" type="card bg-gradient-directional-success"></x-card>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-12">
-                    <div class="card pull-up ecom-card-1 bg-white">
-                        <div class="card-content ecom-card2 height-180">
-                            <h5 class="text-muted info position-absolute p-1">Activity Stats</h5>
-                            <div>
-                                <i class="ft-activity info font-large-1 float-right p-1"></i>
-                            </div>
-                            <div class="progress-stats-container ct-golden-section height-75 position-relative pt-3">
-                                <div id="progress-stats-bar-chart1"></div>
-                                <div id="progress-stats-line-chart1" class="progress-stats-shadow"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-3">
+                    <x-card title="Total Customers" type="card bg-gradient-directional-danger"></x-card>
                 </div>
-                <div class="col-xl-4 col-lg-12">
-                    <div class="card pull-up ecom-card-1 bg-white">
-                        <div class="card-content ecom-card2 height-180">
-                            <h5 class="text-muted warning position-absolute p-1">Sales Stats</h5>
-                            <div>
-                                <i class="ft-shopping-cart warning font-large-1 float-right p-1"></i>
-                            </div>
-                            <div class="progress-stats-container ct-golden-section height-75 position-relative pt-3">
-                                <div id="progress-stats-bar-chart2"></div>
-                                <div id="progress-stats-line-chart2" class="progress-stats-shadow"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-3">
+                    <x-card title="Total Sale" type="card bg-gradient-x-orange-yellow"></x-card>
                 </div>
+                <div class="col-lg-3">
+                    <x-card title="Total Orders" type="card bg-gradient-x-info"></x-card>
+                </div>
+
             </div>
             <!--/ eCommerce statistic -->
             <!-- Product Summary and Chat -->

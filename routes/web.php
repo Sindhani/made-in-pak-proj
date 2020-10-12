@@ -12,18 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('backend.admin.dashboard');
-});
-Route::get('/users', function () {
-    return view('backend.admin.dashboard');
-})->name('users');
-
 Route::get('register', function(){
     return view('auth.register');
 })->name('register');
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

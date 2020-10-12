@@ -35,38 +35,16 @@
 
 </head>
 <body class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
-
-<!-- fixed-top-->
 @include('layout.partials.nav')
-
-<!-- ////////////////////////////////////////////////////////////////////////////-->
 @include('layout.partials.left-nav')
-
-
-
 <div class="app-content content">
     <div class="content-wrapper">
-        <div class="content-wrapper-before"></div>
-        <div class="content-header row">
-        </div>
-        <div class="content-body"><!-- Chart -->
-            <div class="row match-height">
-                <div class="col-12">
-                    <div class="">
-                        <div id="gradient-line-chart1" class="height-250 GradientlineShadow1"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- Chart -->
-            <!-- eCommerce statistic -->
-
+        <div class="content-wrapper-before" style="height: 120px!important;"></div>
+        <div class="content-body">
                 @yield('contents')
-
         </div>
     </div>
 </div>
-<!-- ////////////////////////////////////////////////////////////////////////////-->
-
 @include('layout.partials.footer')
 <!-- BEGIN VENDOR JS-->
 <script src="{{asset('vendor/theme-assets/vendors/js/vendors.min.js" type="text/javascript')}}"></script>

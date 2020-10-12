@@ -2,7 +2,7 @@
      data-img="{{asset('vendor/theme-assets/images/backgrounds/02.jpg')}}">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
-            <li class="nav-item mr-auto"><a class="navbar-brand" href="{{url('/')}}"><img class="brand-logo"
+            <li class="nav-item mr-auto"><a class="navbar-brand" href="{{route('admin.dashboard')}}"><img class="brand-logo"
                                                                                           alt="Chameleon admin logo"
                                                                                           src="{{asset('vendor/theme-assets/images/logo/logo.png')}}"/>
                     <h3 class="brand-text">Chameleon</h3></a></li>
@@ -11,10 +11,13 @@
     </div>
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-            <li class="active"><a href="index.html"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
+            <li class="active"><a href="{{route('admin.dashboard')}}"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
             </li>
-            <li class=" nav-item"><a href="{{route('users')}}"><i class="ft-pie-chart"></i><span class="menu-title"
-                                                                                          data-i18n="">Users</span></a>
+            <li class=" nav-item"><a href="{{route('admin.buyers')}}"><i class="ft-pie-chart"></i><span class="menu-title"
+                                                                                          data-i18n="">Buyers</span></a>
+            </li>
+            <li class=" nav-item"><a href="{{route('admin.sellers')}}"><i class="ft-pie-chart"></i><span class="menu-title"
+                                                                                          data-i18n="">Sellers</span></a>
             </li>
             <li class=" nav-item"><a href="icons.html"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Icons</span></a>
             </li>
