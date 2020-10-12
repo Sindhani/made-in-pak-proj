@@ -23,3 +23,6 @@ Route::get('/users', function () {
 require_once "admin.php";
 require_once "front.php";
 require_once "backend.php";
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
