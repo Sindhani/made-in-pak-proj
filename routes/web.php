@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('backend.admin.dashboard');
-});
+// Route::get('/', function () {
+//     return view('backend.admin.dashboard');
+// });
 Route::get('/users', function () {
     return view('backend.admin.dashboard');
 })->name('users');
