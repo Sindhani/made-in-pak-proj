@@ -20,9 +20,13 @@ Route::get('/users', function () {
     return view('backend.admin.dashboard');
 })->name('users');
 
-require_once "admin.php";
-require_once "front.php";
-require_once "backend.php";
+Route::get('register', function(){
+    return view('auth.register');
+})->name('register');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+require_once "admin.php";
+require_once "front.php";
+require_once "backend.php";
