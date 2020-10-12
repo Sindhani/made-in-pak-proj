@@ -73,6 +73,21 @@
                                                     aria-label="Salary: activate to sort column ascending"
                                                     style="width: 138px;">Actions
                                                 </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_2"
+                                                    rowspan="1" colspan="1"
+                                                    aria-label="Salary: activate to sort column ascending"
+                                                    style="width: 138px;">Status
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_2"
+                                                    rowspan="1" colspan="1"
+                                                    aria-label="Salary: activate to sort column ascending"
+                                                    style="width: 138px;">Suspended
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_2"
+                                                    rowspan="1" colspan="1"
+                                                    aria-label="Salary: activate to sort column ascending"
+                                                    style="width: 138px;">
+                                                </th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -84,6 +99,11 @@
                                                 <td>
                                                     <i class="ft-edit-3 text-info mr-3" style="font-size: 30px;"></i>
                                                     <i class="ft-user-x text-danger" style="font-size: 30px;"></i>
+                                                </td>
+                                                <td>
+                                                    <form>
+                                                    <input type="checkbox" class="js-switch" checked />
+                                                    </form>
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -148,3 +168,9 @@
     </div>
     </div>
 @stop
+@section('js')
+    <script>
+    var elem = document.querySelector('.js-switch');
+    new Switchery(elem, { size: '50px' });
+    </script>
+    @stop
