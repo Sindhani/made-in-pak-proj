@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Seller;
+use App\Models\Buyer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class SellerFactory extends Factory
+class BuyerFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Seller::class;
+    protected $model = Buyer::class;
 
     /**
      * Define the model's default state.
@@ -22,13 +22,7 @@ class SellerFactory extends Factory
     public function definition()
     {
         return [
-<<<<<<< HEAD
             //
-=======
-            'name' => $this->faker->name,
-            'email' => $this->faker->unique()->safeEmail,
-            'password' => "password",
->>>>>>> ghulam_ali
         ];
     }
 }
