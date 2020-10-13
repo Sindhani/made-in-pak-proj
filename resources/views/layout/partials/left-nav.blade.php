@@ -32,9 +32,9 @@
             class="menu-title"
             data-i18n="">Sellers</span></a>
             </li>
-            <li class=" nav-item"><a href="icons.html"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Icons</span></a>
+            <li class=" nav-item"><a href="{{route('admin.categories.index')}}"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Add Categories</span></a>
             </li>
-            <li class=" nav-item"><a href="cards.html"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Cards</span></a>
+            <li class=" nav-item"><a href="{{route('admin.sellers.index')}}"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Add SubCategory</span></a>
             </li>
             <li class=" nav-item"><a href="buttons.html"><i class="ft-box"></i><span class="menu-title" data-i18n="">Buttons</span></a>
             </li>
