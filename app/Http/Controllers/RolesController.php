@@ -18,7 +18,6 @@ class RolesController extends Controller
         //   $permissionNames = $user->getPermissionNames();
         //   dd($permissionNames);
         $v=User::find(5)->with('permissions')->get();
-       dd($v);
        dd(Permission::all()->pluck('name'));
         $users = User::role('Admin')->get('name');
         $user = User::role('Seller')->get();

@@ -22,7 +22,7 @@ class AdminFactory extends Factory
     public function definition()
     {
         return [
-            //
+
         ];
     }
 }

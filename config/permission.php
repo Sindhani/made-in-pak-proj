@@ -116,7 +116,17 @@ return [
         'expiration_time' => \DateInterval::createFromDateString('24 hours'),
 
         /*
-         * The cache key used to store all permissions.
+         *
+         *
+         *
+         *
+         *
+         *
+         *
+         *
+
+
+         The cache key used to store all permissions.
          */
 
         'key' => 'spatie.permission.cache',
