@@ -18,7 +18,7 @@
                 <div class="card-content collapse show">
                     <div class="card-body card-dashboard">
                         <p class="card-text">The Following table show a complete list of all registered Sellers in the
-                            system.<i class="mr-5 text-info ft-user-plus float-right" style="font-size: 30px;"></i> </p>
+                            system.<a href="{{route('admin.sellers.create')}}"><i class="mr-5 text-info ft-user-plus float-right" style="font-size: 30px;"></i></a> </p>
                         <div class="table-responsive">
                             <div id="DataTables_Table_2_wrapper"
                                  class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">

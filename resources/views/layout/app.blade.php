@@ -32,8 +32,8 @@
 
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
-    @yield('css')
-    <!-- END Custom CSS-->
+@yield('css')
+<!-- END Custom CSS-->
 
 </head>
 <body class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
@@ -43,7 +43,7 @@
     <div class="content-wrapper">
         <div class="content-wrapper-before" style="height: 120px!important;"></div>
         <div class="content-body">
-                @yield('contents')
+            @yield('contents')
         </div>
     </div>
 </div>
