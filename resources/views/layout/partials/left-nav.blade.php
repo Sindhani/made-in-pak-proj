@@ -32,6 +32,18 @@
             class="menu-title"
             data-i18n="">Sellers</span></a>
             </li>
+            <li class=" nav-item"><a href="{{route('admin.roles.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Roles</span></a>
+            </li>
+            <li class=" nav-item"><a href="{{route('admin.permissions.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Permissions</span></a>
+            </li>
+            <li class=" nav-item"><a href="{{route('admin.assign-roles-and-permissions.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Assign Roles</span></a>
+            </li>
             <li class=" nav-item"><a href="icons.html"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Icons</span></a>
             </li>
             <li class=" nav-item"><a href="cards.html"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Cards</span></a>
