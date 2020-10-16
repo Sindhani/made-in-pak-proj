@@ -1,11 +1,10 @@
 @extends('layout.app')
 @section('contents')
-
     <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Roles</h4>
+                    <h4 class="card-title">Categories</h4>
                     <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                     <div class="heading-elements">
                         <ul class="list-inline mb-0">
@@ -16,11 +15,10 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="card-content collapse show">
                     <div class="card-body">
-                        <p>Below Table contains list of roles
-                            <a href="{{route('admin.permissions.create')}}">
+                        <p>Below Table contains list of Categor
+                            <a href="{{route('admin.category.create')}}">
                             <span class="float-right">
 
                                 <i class="ft-plus-circle text-success" style="font-size: 30px;"></i>
@@ -38,28 +36,23 @@
                                 <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Role</th>
-                                    <th>Guard Name</th>
+                                    <th>Name</th>
                                     <th>Created At</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($permissions as $permission)
+                                @foreach($categories as $category)
                                     <tr>
                                         <th scope="row">{{$loop->index+1}}</th>
-                                        <td>{{$permission->name}}</td>
-                                        <td>{{$permission->guard_name}}</td>
-                                        <td>{{$permission->created_at}}</td>
+                                        <td>{{$category->name}}</td>
+                                        <td>{{$category->created_at}}</td>
                                         <td>
-                                            <a href="{{route('admin.permissions.edit', $permission)}}"><i
-                                                        class="ft-edit-3" style="font-size: 25px;"></i></a>
-                                            <form action="{{route('admin.permissions.destroy', $permission->id)}}"
-                                                  method="post">
+                                            <a href="{{route('admin.category.edit', $category->id)}}"><i class="ft-edit-3" style="font-size: 25px;"></i></a>
+                                            <form action="{{route('admin.category.destroy', $category->id)}}" method="post">
                                                 @csrf()
                                                 @method('delete')
-                                                <button type="submit"><i class="ft-trash text-danger"
-                                                                         style="font-size: 25px;"></i></button>
+                                                <button type="submit"><i class="ft-trash text-danger" style="font-size: 25px;"></i></button>
                                             </form>
 
                                         </td>
@@ -73,5 +66,8 @@
                 </div>
             </div>
         </div>
+
+
+
     </div>
 @stop

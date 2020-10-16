@@ -4,21 +4,22 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Card extends Component
+class alert extends Component
 {
     public $type;
-    public $title;
-    public $xyz;
+    public $message;
+    public $text;
     /**
      * Create a new component instance.
-     *
+     * @param $type = string
+     * @param $message = string
      * @return void
      */
-    public function __construct($type, $title, $data)
+    public function __construct($text= null,$type=null,$message=null)
     {
+        $this->message = $message;
         $this->type = $type;
-        $this->title = $title;
-        $this->xyz = $data;
+        $this->text  = $text;
     }
 
     /**
@@ -28,6 +29,6 @@ class Card extends Component
      */
     public function render()
     {
-        return view('components.card');
+        return view('components.alert');
     }
 }

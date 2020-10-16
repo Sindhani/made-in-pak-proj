@@ -44,25 +44,34 @@
             class="menu-title"
             data-i18n="">Assign Roles</span></a>
             </li>
-            <li class=" nav-item"><a href="icons.html"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Icons</span></a>
+            <li class=" nav-item"><a href="{{route('admin.assign-roles-and-permissions.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Categories</span></a>
             </li>
-            <li class=" nav-item"><a href="cards.html"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Cards</span></a>
+            <li class=" nav-item"><a href="{{route('admin.product.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Products</span></a>
             </li>
-            <li class=" nav-item"><a href="buttons.html"><i class="ft-box"></i><span class="menu-title" data-i18n="">Buttons</span></a>
+            <li class=" nav-item"><a href="{{route('admin.assign-roles-and-permissions.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Orders</span></a>
             </li>
-            <li class=" nav-item"><a href="typography.html"><i class="ft-bold"></i><span class="menu-title"
-            data-i18n="">Typography</span></a>
+            <li class=" nav-item"><a href="{{route('admin.tag.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Tags</span></a>
             </li>
-            <li class=" nav-item"><a href="tables.html"><i class="ft-credit-card"></i><span class="menu-title"
-            data-i18n="">Tables</span></a>
+             <li class=" nav-item"><a href="{{route('admin.assign-roles-and-permissions.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Review & Ratings</span></a>
             </li>
-            <li class=" nav-item"><a href="form-elements.html"><i class="ft-layout"></i><span class="menu-title"
-            data-i18n="">Form Elements</span></a>
+            <li class=" nav-item"><a href="{{route('admin.category.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Category</span></a>
             </li>
-            <li class=" nav-item"><a href="https://themeselection.com/demo/chameleon-admin-template/documentation"><i
-            class="ft-book"></i><span class="menu-title" data-i18n="">Documentation</span></a>
+            <li class=" nav-item"><a href="{{route('admin.subcategory.index')}}"><i class="ft-pie-chart"></i><span
+            class="menu-title"
+            data-i18n="">Sub Category</span></a>
             </li>
-
 
 
         </ul>

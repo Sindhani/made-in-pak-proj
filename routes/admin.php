@@ -3,11 +3,16 @@
 
 use App\Http\Controllers\Admin\AssignRoleAndPermissionController;
 use App\Http\Controllers\Admin\BuyerController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PermissionController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SaleDashboardController;
 use App\Http\Controllers\Admin\SellerController;
 use App\Http\Controllers\Admin\RoleController;
+use App\Http\Controllers\Admin\SubCategoryController;
+use App\Http\Controllers\TagController;
+
 
 Route::group(['prefix'=>'admin', 'as' => 'admin.'],function(){
     Route::resource('sellers', SellerController::class);
@@ -17,6 +22,10 @@ Route::group(['prefix'=>'admin', 'as' => 'admin.'],function(){
     Route::resource('roles', RoleController::class);
     Route::resource('permissions', PermissionController::class);
     Route::resource('assign-roles-and-permissions', AssignRoleAndPermissionController::class);
+    Route::resource('category', CategoryController::class);
+    Route::resource('subcategory', SubCategoryController::class);
+    Route::resource('product', ProductController::class);
+    Route::resource('tag',TagController::class);
 });
 
 

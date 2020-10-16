@@ -1,5 +1,9 @@
 @extends('layout.app')
+@section('title', 'Tags')
 @section('contents')
+
+
+
 
     <div class="row">
         <div class="col-12">
@@ -16,11 +20,10 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="card-content collapse show">
                     <div class="card-body">
                         <p>Below Table contains list of roles
-                            <a href="{{route('admin.permissions.create')}}">
+                            <a href="{{route('admin.tag.create')}}">
                             <span class="float-right">
 
                                 <i class="ft-plus-circle text-success" style="font-size: 30px;"></i>
@@ -38,24 +41,21 @@
                                 <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Role</th>
-                                    <th>Guard Name</th>
+                                    <th>Tag</th>
                                     <th>Created At</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($permissions as $permission)
+                                @foreach($tags as $tag)
                                     <tr>
                                         <th scope="row">{{$loop->index+1}}</th>
-                                        <td>{{$permission->name}}</td>
-                                        <td>{{$permission->guard_name}}</td>
-                                        <td>{{$permission->created_at}}</td>
+                                        <td>{{$tag->tag}}</td>
+                                        <td>{{$tag->created_at}}</td>
                                         <td>
-                                            <a href="{{route('admin.permissions.edit', $permission)}}"><i
-                                                        class="ft-edit-3" style="font-size: 25px;"></i></a>
-                                            <form action="{{route('admin.permissions.destroy', $permission->id)}}"
-                                                  method="post">
+                                            <a href="{{route('admin.tag.edit', $tag->id)}}"><i class="ft-edit-3"
+                                                                                                  style="font-size: 25px;"></i></a>
+                                            <form action="{{route('admin.tag.destroy', $tag->id)}}" method="post">
                                                 @csrf()
                                                 @method('delete')
                                                 <button type="submit"><i class="ft-trash text-danger"

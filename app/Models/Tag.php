@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Tag extends Model
 {
-    protected $guarded = [];
+    protected $fillable = ['tag'];
     use HasFactory;
-    public function tags(){
-        return $this->belongsToMany(Tag::class);
+    public function products(){
+        return $this->belongsToMany(Product::class);
     }
 }

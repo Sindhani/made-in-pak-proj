@@ -7,7 +7,7 @@
     <meta name="description" content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
     <meta name="keywords" content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
     <meta name="author" content="ThemeSelect">
-    <title>Dashboard - Chameleon Admin - Modern Bootstrap 4 WebApp & Dashboard HTML Template + UI Kit</title>
+    <title>@yield('title', 'Dashboard')</title>
     <link href="{{asset('vendor/theme-assets/fonts/simple-line-icons/style.min.css')}}">
     <link rel="apple-touch-icon" href="{{asset('vendor/theme-assets/images/ico/apple-icon-120.png')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('vendor/theme-assets/images/ico/favicon.ico')}}">
@@ -38,6 +38,7 @@
 
 </head>
 <body class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
+@include('sweetalert::alert')
 @include('layout.partials.nav')
 @include('layout.partials.left-nav')
 <div class="app-content content">
