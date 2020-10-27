@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\ChatsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RolesController;
 
@@ -15,6 +16,10 @@ Route::get('/', function(){
         })->name('dashboard');
 
         Route::get('/roles', [RolesController::class, 'role']);
+
+        Route::get('/chat', [ChatsController::class, 'index']);
+        Route::get('messages', [ChatsController::class, 'fetchMessages']);
+        Route::post('messages', [ChatsController::class, 'sendMessage']);
 
 require_once "admin.php";
 require_once "front.php";
