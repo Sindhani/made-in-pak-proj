@@ -21,19 +21,6 @@ class CreateReviewsTable extends Migration
             $table->integer('rating')->nullable();
             $table->tinyInteger('approved')->default(0);
             $table->timestamps();
-
-            // $table->integer('customer_service_rating')->nullable();
-            // $table->integer('quality_rating')->nullable();
-            // $table->integer('friendly_rating')->nullable();
-            // $table->integer('pricing_rating')->nullable();
-            // $table->enum('recommend', ['Yes', 'No']);
-            // $table->enum('department', ['Sales', 'Service', 'Parts']);
-            // $table->string('title');
-            // $table->string('body');
-            // $table->boolean('approved')->default(0);
-            // $table->morphs('reviewrateable');
-            // $table->morphs('author');
-            //$table->timestamps();
         });
     }
 
