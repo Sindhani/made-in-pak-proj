@@ -12,14 +12,13 @@ class ReviewController extends Controller
     public function reviews(Request $request)
     {
         $product=Product::first();
-        //  dd($product->reviews());
             $user=User::first();
             $request->merge(['product_id'=>$product->id]);
-            $user->review()->create(array_merge($request->all()));
+            $user->review()->create($request->all());
           return back()->with('success');
     }
     public function review_show() {
         $reviews=Review::all();
-           return  view('backend/admin/buyer/review_all',compact('reviews'));
+           return  view('backend.admin.buyer.review_all',compact('reviews'));
     }
 }
