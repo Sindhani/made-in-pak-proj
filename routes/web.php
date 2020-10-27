@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 //require_once "front.php";
 //require_once "backend.php";
 use App\Http\Controllers\RolesController;
+use App\Http\Controllers\ReviewController;
 Route::get('register', function(){
     return view('auth.register');
 })->name('register');
@@ -26,4 +27,8 @@ require_once "admin.php";
 require_once "front.php";
 require_once "backend.php";
 Route::get('/roles',[RolesController::class,'role']);
-
+Route::post('/review',[ReviewController::class,'reviews'])->name('review');
+Route::get('/all_review',[ReviewController::class,'review_show'])->name('review_show');
+Route::get('review/form',function(){
+        return view('backend/admin/buyer/review');
+});
