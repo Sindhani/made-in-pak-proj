@@ -32,31 +32,9 @@
             class="menu-title"
             data-i18n="">Sellers</span></a>
             </li>
-<<<<<<< HEAD
             <li class=" nav-item"><a href="{{route('admin.categories.index')}}"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Add Categories</span></a>
             </li>
             <li class=" nav-item"><a href="{{route('admin.sellers.index')}}"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Add SubCategory</span></a>
-=======
-            <li class=" nav-item"><a href="{{route('admin.roles.index')}}"><i class="ft-pie-chart"></i><span
-            class="menu-title"
-            data-i18n="">Roles</span></a>
-            </li>
-            <li class=" nav-item"><a href="{{route('admin.permissions.index')}}"><i class="ft-pie-chart"></i><span
-            class="menu-title"
-            data-i18n="">Permissions</span></a>
-            </li>
-            <li class=" nav-item"><a href="{{route('admin.assign-roles-and-permissions.index')}}"><i class="ft-pie-chart"></i><span
-            class="menu-title"
-            data-i18n="">Assign Roles</span></a>
-            </li>
-            <li class=" nav-item"><a href="{{route('admin.assign-roles-and-permissions.index')}}"><i class="ft-pie-chart"></i><span
-            class="menu-title"
-            data-i18n="">Categories</span></a>
-            </li>
-            <li class=" nav-item"><a href="{{route('admin.product.index')}}"><i class="ft-pie-chart"></i><span
-            class="menu-title"
-            data-i18n="">Products</span></a>
->>>>>>> refs/remotes/origin/master
             </li>
             <li class=" nav-item"><a href="{{route('admin.assign-roles-and-permissions.index')}}"><i class="ft-pie-chart"></i><span
             class="menu-title"
@@ -78,7 +56,6 @@
             class="menu-title"
             data-i18n="">Sub Category</span></a>
             </li>
-
 
         </ul>
     </div>
