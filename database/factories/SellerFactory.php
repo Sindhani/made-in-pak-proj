@@ -22,13 +22,9 @@ class SellerFactory extends Factory
     public function definition()
     {
         return [
-<<<<<<< HEAD
-            //
-=======
             'name' => $this->faker->name,
             'email' => $this->faker->unique()->safeEmail,
             'password' => "password",
->>>>>>> ghulam_ali
         ];
     }
 }
