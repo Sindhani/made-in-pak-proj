@@ -8,7 +8,7 @@
                     </div>
                     <div class="media-body text-white text-right align-self-bottom mt-3">
                         <span class="d-block mb-1 font-medium-1">{{$title}}</span>
-                        <h1 class="text-white mb-0">{{$customers}}</h1>
+                        <h1 class="text-white mb-0">{{$xyz}}</h1>
                     </div>
                 </div>
             </div>

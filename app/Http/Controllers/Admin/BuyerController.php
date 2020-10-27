@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Spatie\Permission\Exceptions\RoleDoesNotExist;
 
 class BuyerController extends Controller
 {
@@ -14,7 +16,13 @@ class BuyerController extends Controller
      */
     public function index()
     {
-        return view('backend.admin.buyer.index');
+        $users = User::role('buyer')->get();
+        try {
+            return view('backend.admin.buyer.index', compact('users'));
+        } catch (RoleDoesNotExist $exception) {
+            return view('backend.admin.buyer.index', compact('users'));
+        }
+
     }
 
     /**
@@ -69,7 +77,7 @@ class BuyerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        dd($request->all());
     }
 
     /**

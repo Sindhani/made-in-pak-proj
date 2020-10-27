@@ -11,17 +11,21 @@
             <div class="row">
 
                 <div class="col-lg-3">
-                    <x-card title="Total Views" type="card bg-gradient-directional-success"></x-card>
+                    <x-card title="Total Users"
+                            type="card bg-gradient-directional-success"
+                            :data="$users"></x-card>
                 </div>
                 <div class="col-lg-3">
-                    <x-card title="Total Customers" type="card bg-gradient-directional-danger"></x-card>
+                    <x-card title="Total Customers"
+                            type="card bg-gradient-directional-danger"
+                            :data="$buyers"></x-card>
                 </div>
                 <div class="col-lg-3">
-                    <x-card title="Total Sale" type="card bg-gradient-x-orange-yellow"></x-card>
+                    <x-card title="Total Sellers" type="card bg-gradient-x-orange-yellow" :data="$sellers"></x-card>
                 </div>
-                <div class="col-lg-3">
-                    <x-card title="Total Orders" type="card bg-gradient-x-info"></x-card>
-                </div>
+                {{--<div class="col-lg-3">--}}
+                    {{--<x-card title="Total Orders" type="card bg-gradient-x-info" :data=""></x-card>--}}
+                {{--</div>--}}
 
             </div>
             <!--/ eCommerce statistic -->
